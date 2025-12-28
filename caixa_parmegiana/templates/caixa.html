@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>📊 Caixa do Dia</h2>
+
+<table border="1">
+<tr>
+    <th>Cliente</th>
+    <th>Tipo</th>
+    <th>Proteína</th>
+    <th>Pagamento</th>
+    <th>Origem</th>
+    <th>Valor</th>
+</tr>
+
+{% for p in pedidos %}
+<tr>
+    <td>{{ p[1] }}</td>
+    <td>{{ p[2] }}</td>
+    <td>{{ p[3] }}</td>
+    <td>{{ p[7] }}</td>
+    <td>{{ p[6] }}</td>
+    <td>R$ {{ p[8] }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<h3>Total do dia: R$ {{ total }}</h3>
+
+<a href="/">Novo pedido</a>
+
+{% endblock %}
