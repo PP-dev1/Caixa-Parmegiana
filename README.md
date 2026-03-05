@@ -13,11 +13,8 @@ Registrar pedidos e evitar erros de caixa, com cálculo automático de valores.
 
 ## 🛠️ Tecnologias
 - Python
-- Flask
-- SQLite
-- HTML/CSS
+- pyinstaller (Para rodar em máquinas externas)
+- Tkinter (Interface Gráfica)
 
 ## ▶️ Como rodar o projeto
-```bash
-pip install -r requirements.txt
-python app.py
+Apenas executar o app.exe
